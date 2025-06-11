@@ -1,0 +1,51 @@
+.title{
+    text-align: center;
+}
+
+.nav-list{
+
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+/* 전체 화면 오버레이 */
+.intro-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: #1A391B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    /* 페이드아웃 전환 준비 */
+    transition: opacity 1s ease;
+}
+
+/* 구글 필기체 폰트 로드 */
+
+
+/* SVG 텍스트 기본 스타일 */
+#logo-text {
+    font-family: 'Cookie', cursive;
+    font-size: 180px;
+    fill: transparent;        /* 내부 채우기 없애기 */
+    stroke: #ffffff;
+    stroke-width: 2px;
+    /* strokeDasharray, strokeDashoffset 은 JS에서 설정 */
+}
+
+/* 페이드 아웃 클래스 */
+.intro-overlay.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* 메인 콘텐츠 숨김 */
+#main-content {
+    visibility: hidden;
+}
+
+/*#FACD27 노란색*/
