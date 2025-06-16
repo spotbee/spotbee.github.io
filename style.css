@@ -1,6 +1,17 @@
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
 .title{
     text-align: center;
     font-family: 'Cookie',cursive;
+    position: sticky;
     font-size: 50px;
 }
 
@@ -8,7 +19,7 @@
 
     align-items: center;
     display: flex;
-    gap: 30px;
+
     list-style: none;
 }
 
@@ -26,20 +37,16 @@
     transition: opacity 1s ease;
 }
 
-/* 구글 필기체 폰트 로드 */
-
-
-/* SVG 텍스트 기본 스타일 */
 #logo-text {
     font-family: 'Cookie', cursive;
-    font-size: 180px;
+    font-size: 100px;
     fill: transparent;        /* 내부 채우기 없애기 */
     stroke: #ffffff;
     stroke-width: 2px;
     /* strokeDasharray, strokeDashoffset 은 JS에서 설정 */
 }
 
-/* 페이드 아웃 클래스 */
+
 .intro-overlay.fade-out {
     opacity: 0;
     pointer-events: none;
@@ -50,4 +57,21 @@
     visibility: hidden;
 }
 
-/*#FACD27 노란색*/
+.section{
+    padding: 190px;
+    background-color: #1A391B;
+}
+
+.section:nth-of-type(even) {
+    background-color: #eaf4fb;
+}
+
+header {
+    background-color: blue;
+    padding: 30px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
